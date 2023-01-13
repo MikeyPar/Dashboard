@@ -13,11 +13,24 @@
 
 .nav {
     display: grid;
-    background-color:royalblue;
+    background-color:#334155;
     grid-row: 1 / 3;
     justify-items: center;
     align-items: start;
     grid-template-rows: min(1fr) min(2fr) min(1fr);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #f8fafc;
+}
+
+a {
+    display: flex;
+    gap: 8px;
 }
 
 .top-nav {
@@ -47,7 +60,31 @@ ul {
     grid-template-columns: 4fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-area: 1 / 2 / 2 / 4;
+    justify-items: start;
+    background-color: #cbd5e1;
+    align-items: center;
+}
 
+#search {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    width: 600px;
+    height: 75px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+#search input {
+    margin-top: 2px;
+    width: 500px;
+    height: 18px;
+}
+
+button {
+    border-radius: 16px;
+    height: 50px;
+    width: 100px;
 }
 
 .Hello {
@@ -55,6 +92,8 @@ ul {
     grid-area: 2 / 1 / 3 / 2;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding-left: 40px;
 }
 
 #Hi {
@@ -68,11 +107,49 @@ ul {
 }
 
 #Big-pic {
+    margin-right: 16px;
     grid-area: 1 / 1 / 3 / 2;
 }
 
+#Big-pic img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
 #Small-pic {
+    display: flex;
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 5;
+    padding-bottom: 40px;
+}
+
+#Small-pic img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+#Small-name {
+    margin-top: 16px;
+}
+
+#notif {
     grid-area: 1 / 3 / 2 / 4;
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+
+#notif img {
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    grid-area: 2 / 2 / 3 / 5;
 }
 
 .content {
@@ -80,24 +157,24 @@ ul {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-area: 2 / 2 / 3 / 4;
-    background-color: gainsboro;
+    background-color: #94a3b8;
 }
 
 .Right {
     display: grid;
     grid-area: 1 / 2 / 3 / 3;
     grid-template-rows: 1fr 10fr 1fr 10fr;
-    margin-top: 42px;
+    margin-top: 16px;
 }
 
 #Announce-box {
-    background-color: cyan;
+    background-color: #e2e8f0;
     height: 300px;
     width: 300px;
 }
 
 #Trend-box {
-    background-color: cyan;
+    background-color: #e2e8f0;
     height: 300px;
     width: 300px;
 }
@@ -119,12 +196,11 @@ ul {
 }
 
 .cards {
-    display: grid;
-    justify-content: center;
-    align-content: space-evenly;
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-template-rows: repeat(auto-fill, 200px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -133,6 +209,9 @@ ul {
     align-items: center;
     height: 200px;
     width: 300px;
-    background-color: cyan;
+    background-color: #f1f5f9;
+    border-radius: 16px;
+    border-style: outset;
+    border-color: #334155;
 }
 
