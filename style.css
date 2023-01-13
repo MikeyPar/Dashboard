@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav {
+    display: grid;
+    background-color:royalblue;
+    grid-row: 1 / 3;
+    justify-items: center;
+    align-items: start;
+    grid-template-rows: min(1fr) min(2fr) min(1fr);
+}
+
+.top-nav {
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+ul {
+    display: grid;
+    list-style: none;
+    gap: 40px;
+}
+
+.mid-nav {
+    font-size: larger;
+}
+
+.bot-nav {
+    padding-left: 0px;
+    padding-right: 40px;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 1 / 2 / 2 / 4;
+
+}
+
+.Hello {
+    display: grid;
+    grid-area: 2 / 1 / 3 / 2;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#Hi {
+    grid-column: 2 / 3;
+}
+
+#Name {
+    grid-area: 2 / 2 / 3 / 3;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#Big-pic {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#Small-pic {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 2 / 2 / 3 / 4;
+    background-color: gainsboro;
+}
+
+.Right {
+    display: grid;
+    grid-area: 1 / 2 / 3 / 3;
+    grid-template-rows: 1fr 10fr 1fr 10fr;
+    margin-top: 42px;
+}
+
+#Announce-box {
+    background-color: cyan;
+    height: 300px;
+    width: 300px;
+}
+
+#Trend-box {
+    background-color: cyan;
+    height: 300px;
+    width: 300px;
+}
+
+.Left {
+    display: grid;
+    grid-area: 1 / 1 / 4 / 2;
+    grid-template-rows: 1fr 15fr;
+}
+
+#projects {
+    display: grid;
+    grid-row: 1 / 1;
+    justify-content: start;
+    align-items: flex-end;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.cards {
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 200px);
+    gap: 8px;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: cyan;
+}
+
